@@ -12,7 +12,7 @@ jobs:
           github-token: ${{ secrets.DEPLOY_PAT }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
-              owner: 'recursosdisenoes',
+              owner: 'gis4offshore',
               repo: 'obsidian-gitbook',
               workflow_id: 'build-gitbook.yml',
               ref: 'main',
